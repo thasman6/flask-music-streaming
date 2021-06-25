@@ -38,7 +38,7 @@ def show_entries():
         'title': 'Music Player'}
     print(return_dict())
     stream_entries = return_dict()
-    return render_template('simple.html', entries=stream_entries, **general_Data)
+    return render_template('design.html', entries=stream_entries, **general_Data)
 
 #Route to stream music
 @app.route('/<int:stream_id>')
